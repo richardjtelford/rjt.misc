@@ -1,0 +1,9 @@
+Package: rjt.misc
+Title: What the Package Does (one line, title case)
+Version: 0.0.0.9000
+Authors@R: person("Richard", "Telford", email = "richard.telford@uib.no", role = c("aut", "cre"))
+Description: Miscellaneous utility functions for writing manuscripts
+Depends: R (>= 3.4.4)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
