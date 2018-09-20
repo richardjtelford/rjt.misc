@@ -1,4 +1,9 @@
-#append package citations to copy of main bibliography
+#'package_citations
+#' @description Append package citations to copy of main bibliography
+#' @param packages vector of packages for which citations are required
+#' @param old_bib old bibtex file to copy
+#' @param new_bib new bibtex file
+#' @export
 
 package_citations <- function(packages, old_bib, new_bib){
   
