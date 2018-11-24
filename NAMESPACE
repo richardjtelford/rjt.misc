@@ -2,3 +2,6 @@
 
 export(insist)
 export(package_citations)
+importFrom(bibtex,write.bib)
+importFrom(fs,file_copy)
+importFrom(utils,citation)

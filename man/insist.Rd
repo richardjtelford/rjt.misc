@@ -4,12 +4,14 @@
 \alias{insist}
 \title{insist}
 \usage{
-insist(., test)
+insist(., test, continue = TRUE)
 }
 \arguments{
 \item{.}{object}
 
 \item{test}{logical test, expression}
+
+\item{continue}{if true prints error, if false throws error}
 }
 \value{
 the object
@@ -18,7 +20,7 @@ the object
 Insists a object meets a given criteria
 }
 \details{
-Tests if the object meets the citeria. If it does, the object is returned. If not, an error is thrown. Test should be an expression that refers to the object as .
+Tests if the object meets the citeria. If it does, the object is returned. If not, an error is thrown unless continue is true, in which case the error is returned. Test should be an expression that refers to the object as .
 }
 \examples{
 require(magrittr)
