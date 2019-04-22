@@ -22,7 +22,7 @@ float_tex <- function(tex, clean = TRUE) {
 #' @export
 
 as.english <- function(x){ # problem with new version of rmarkdown
-  as.character(as.english(x))
+  as.character(english::as.english(x))
 }
 
 #' @describeIn as.english wrapper for english::as.english that forces character output in sentence case
@@ -31,7 +31,7 @@ as.english <- function(x){ # problem with new version of rmarkdown
 #' @export
 as.English <- function(x){ #sentence case
   stringi::stri_trans_totitle(
-    as.character(as.english(x)), 
+    as.english(x), 
     opts_brkiter = stri_opts_brkiter(type = "sentence"))
 }
 
