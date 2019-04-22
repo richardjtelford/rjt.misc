@@ -1,6 +1,6 @@
 Package: rjt.misc
-Title: What the Package Does (one line, title case)
-Version: 0.0.0.9001
+Title: Utility Functions For Use With Rmarkdown
+Version: 0.0.0.9002
 Authors@R: person("Richard", "Telford", email = "richard.telford@uib.no", role = c("aut", "cre"))
 Description: Miscellaneous utility functions for writing manuscripts.
 Depends: R (>= 3.4.4)
@@ -10,5 +10,7 @@ LazyData: true
 RoxygenNote: 6.0.1
 Imports: fs,
     bibtex,
-    utils
+    utils,
+    english,
+    stringi
 Suggests: magrittr
