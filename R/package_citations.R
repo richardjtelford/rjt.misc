@@ -3,6 +3,7 @@
 #' @param packages vector of packages for which citations are required
 #' @param old_bib old bibtex file to copy
 #' @param new_bib new bibtex file
+#' @return new_bib is returned invisibly 
 #' @importFrom fs file_copy
 #' @importFrom utils citation
 #' @importFrom bibtex write.bib
@@ -21,5 +22,6 @@ package_citations <- function(packages, old_bib, new_bib){
   
   #package citation
   write.bib(packages, new_bib, append = TRUE)
+  invisible(return(new_bib))
 }  
   

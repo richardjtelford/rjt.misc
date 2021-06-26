@@ -13,6 +13,9 @@ package_citations(packages, old_bib, new_bib)
 
 \item{new_bib}{new bibtex file}
 }
+\value{
+new_bib is returned invisibly
+}
 \description{
 Append package citations to copy of main bibliography
 }
